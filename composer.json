@@ -1,0 +1,24 @@
+{
+    "name": "lidyapos/seo-helper",
+    "description": "SEO helper package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "LidyaPos\\SeoHelper\\": "src"
+        }
+    },
+    "require": {
+        "lidyapos/platform": "*@dev",
+        "lidyapos/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LidyaPos\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+            ],
+            "aliases": {
+                "SeoHelper": "LidyaPos\\SeoHelper\\Facades\\SeoHelperFacade"
+            }
+        }
+    }
+}
